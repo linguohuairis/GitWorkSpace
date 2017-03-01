@@ -42,4 +42,41 @@ public class BillingInfoPage {
 		driver.findElement(By.id("nim_billingCCPostalCodeInput")).sendKeys(zipCode);
 		driver.findElement(By.id("nim_billingCCSubmitBtn")).click();
 	}
+	public String getBillingHeader(WebDriver driver){
+		return driver.findElement(By.id("nim_billingHeader")).getText();
+	}
+	
+	public String getBillingSubHeader1(WebDriver driver){
+		return driver.findElement(By.id("nim_billingSubHeader1")).getText();
+	}
+	
+	public String getBillingSubHeader2(WebDriver driver){
+		return driver.findElement(By.id("nim_billingSubHeader2")).getText();
+	}
+	
+	public String getBillingSubHeader3(WebDriver driver){
+		return driver.findElement(By.id("nim_billingSubHeader3")).getText();
+	}
+	
+	public String getBillingSubHeader4(WebDriver driver){
+		return driver.findElement(By.id("nim_billingSubHeader4")).getText();
+	}
+	
+	public String getCreditCardConfirmOrderReviewMessage(WebDriver driver){
+		return driver.findElement(By.id("nim_confirmOrderReviewMessage1Txt")).getText();
+	}
+	
+	public String getPayPalConfirmOrderReviewMessage(WebDriver driver){
+		return driver.findElement(By.id("nim_confirmOrderReviewPayPalMessageTxt")).getText();
+	}
+	
+	public String getconfirmOrderKeepUpdatedInputMessage(WebDriver driver){
+		return driver.findElement(By.id("nim_confirmOrderKeepUpdatedInput")).getText();
+	}
+	
+	public void checkSecurityLogo(WebDriver driver){
+		driver.findElement(By.linkText("DigiCert.com")).click();
+	}
+
+	
 }

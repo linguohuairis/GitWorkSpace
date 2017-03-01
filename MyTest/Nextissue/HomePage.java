@@ -18,13 +18,13 @@ public class HomePage {
         element.click();
 	}
 	
-	public void swtichtoSignInPage(WebDriver driver){
+	public void swtichtToSignInPage(WebDriver driver){
 		WebDriverWait wait = new WebDriverWait(driver, 200);
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Sign In")));
         element.click();
 	}
 
-	public void switchtoAccountSummaryPage(WebDriver driver){
+	public void switchToAccountSummaryPage(WebDriver driver){
 		// to do click dropdown menu
 		driver.findElement(By.linkText("Account Summary")).click();	
 	}
@@ -32,5 +32,9 @@ public class HomePage {
 	public void signOut(WebDriver driver){
 		// to do click dropdown menu
 		driver.findElement(By.linkText("Sign Out")).click();	
+	}
+	
+	public void switchToChooseGiftPage(WebDriver driver){
+		
 	}
 }
